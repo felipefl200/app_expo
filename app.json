@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "ExpoApp",
+    "slug": "ExpoApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "expoapp",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.ExpoApp"
+    },
+    "web": {
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
