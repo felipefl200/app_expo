@@ -1,0 +1,15 @@
+import Svg, { Circle, Path, SvgProps } from 'react-native-svg'
+
+export function CheckRoundIcon({ width = 20, height = 20, fill = 'black', ...rest }: SvgProps) {
+	return (
+		<Svg width={width} height={height} viewBox="0 0 48 48" fill="none" {...rest}>
+			<Circle cx="24" cy="24" r="24" fill={fill} />
+			<Path
+				fillRule="evenodd"
+				clipRule="evenodd"
+				d="M33.6485 17.3515C34.1172 17.8201 34.1172 18.5799 33.6485 19.0485L22.4485 30.2485C21.9799 30.7171 21.2202 30.7171 20.7515 30.2485L14.3515 23.8485C13.8828 23.3798 13.8828 22.6202 14.3515 22.1515C14.8201 21.6829 15.5799 21.6829 16.0485 22.1515L21.6 27.7029L31.9516 17.3515C32.4202 16.8828 33.1799 16.8828 33.6485 17.3515Z"
+				fill={fill}
+			/>
+		</Svg>
+	)
+}

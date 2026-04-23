@@ -1,27 +1,113 @@
 {
-  "expo": {
-    "name": "ExpoApp",
-    "slug": "ExpoApp",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "scheme": "expoapp",
-    "userInterfaceStyle": "automatic",
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "predictiveBackGestureEnabled": false,
-      "package": "com.anonymous.ExpoApp"
-    },
-    "web": {
-      "output": "static"
-    },
-    "plugins": [
-      "expo-router"
-    ],
-    "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
-    }
-  }
+	"expo": {
+		"name": "ExpoApp",
+		"slug": "ExpoApp",
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"scheme": "expoapp",
+		"userInterfaceStyle": "automatic",
+		"ios": {
+			"supportsTablet": true,
+			"bundleIdentifier": "com.anonymous.ExpoApp"
+		},
+		"android": {
+			"predictiveBackGestureEnabled": false,
+			"package": "com.anonymous.ExpoApp"
+		},
+		"web": {
+			"output": "static"
+		},
+		"plugins": [
+			"expo-router",
+			[
+				"expo-font",
+				{
+					"fonts": [
+						"./src/assets/fonts/Satoshi-Black.otf",
+						"./src/assets/fonts/Satoshi-BlackItalic.otf",
+						"./src/assets/fonts/Satoshi-Bold.otf",
+						"./src/assets/fonts/Satoshi-BoldItalic.otf",
+						"./src/assets/fonts/Satoshi-Italic.otf",
+						"./src/assets/fonts/Satoshi-Light.otf",
+						"./src/assets/fonts/Satoshi-LightItalic.otf",
+						"./src/assets/fonts/Satoshi-Medium.otf",
+						"./src/assets/fonts/Satoshi-MediumItalic.otf",
+						"./src/assets/fonts/Satoshi-Regular.otf"
+					],
+					"android": {
+						"fonts": [
+							{
+								"fontFamily": "Satoshi",
+								"fontDefinitions": [
+									{
+										"path": "./src/assets/fonts/Satoshi-Light.otf",
+										"weight": 300
+									},
+									{
+										"path": "./src/assets/fonts/Satoshi-LightItalic.otf",
+										"weight": 300,
+										"style": "italic"
+									},
+									{
+										"path": "./src/assets/fonts/Satoshi-Regular.otf",
+										"weight": 400
+									},
+									{
+										"path": "./src/assets/fonts/Satoshi-Italic.otf",
+										"weight": 400,
+										"style": "italic"
+									},
+									{
+										"path": "./src/assets/fonts/Satoshi-Medium.otf",
+										"weight": 500
+									},
+									{
+										"path": "./src/assets/fonts/Satoshi-MediumItalic.otf",
+										"weight": 500,
+										"style": "italic"
+									},
+									{
+										"path": "./src/assets/fonts/Satoshi-Bold.otf",
+										"weight": 700
+									},
+									{
+										"path": "./src/assets/fonts/Satoshi-BoldItalic.otf",
+										"weight": 700,
+										"style": "italic"
+									},
+									{
+										"path": "./src/assets/fonts/Satoshi-Black.otf",
+										"weight": 900
+									},
+									{
+										"path": "./src/assets/fonts/Satoshi-BlackItalic.otf",
+										"weight": 900,
+										"style": "italic"
+									}
+								]
+							}
+						]
+					},
+					"ios": {
+						"fonts": [
+							"./src/assets/fonts/Satoshi-Black.otf",
+							"./src/assets/fonts/Satoshi-BlackItalic.otf",
+							"./src/assets/fonts/Satoshi-Bold.otf",
+							"./src/assets/fonts/Satoshi-BoldItalic.otf",
+							"./src/assets/fonts/Satoshi-Italic.otf",
+							"./src/assets/fonts/Satoshi-Light.otf",
+							"./src/assets/fonts/Satoshi-LightItalic.otf",
+							"./src/assets/fonts/Satoshi-Medium.otf",
+							"./src/assets/fonts/Satoshi-MediumItalic.otf",
+							"./src/assets/fonts/Satoshi-Regular.otf"
+						]
+					}
+				}
+			]
+		],
+		"experiments": {
+			"typedRoutes": true,
+			"reactCompiler": true
+		}
+	}
 }
